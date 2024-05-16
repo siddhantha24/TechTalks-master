@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>articles</title>
+
+
+
+	<link rel="stylesheet" type="text/css" href="static/css/articles.css" >
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+	<section>
+	<nav>
+	
+	<embed src="{{ url_for('static', filename='img/logoo.svg') }}" width="400" height="100"
+
+			type="image/svg+xml"
+
+	<div class="logoo"></div>
+
+
+
+		<div class="search">
+            <form action="#">
+                <input type="text"
+                    placeholder="   search here"
+                    name="search">
+                <button>
+                    <i class="fa fa-search"
+                        style="font-size: 18px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+
+
+	
+
+	<ul class="dash">
+
+			<li style="position: relative;left: 320px;"><a href="/#"><span class="fas fa-home"></span>HOME</a></li>
+			<li style="position: relative;left: 340px;"><a href="/articles"><span class="fas fa-book"></span>ARTICLES</a>
+
+		</ul>
+</nav>
+</section>
+<section class="article">
+	<div class="article" id="article" style=" color: black;background-color: #f2f9fa; color: black ; padding:150px; align-self: center;">
+	<div class="date">24th JANUARY 2019</div><hr>
+	<h1>HIGH-SPEED PCBS AND 5G TECHNOLOGY CONSIDERATIONS AND CHALLENGES</h1>
+	<p class="quote">
+		Should we say that fifth generation (5G) technology has arrived? Yes. More mobile wireless communication systems are upgrading and converting over their processes to adopt 5G technologies for better connectivity to the Internet of Things (IoT) . The dizzying speeds of 5G will open new market opportunities to all industries that will use, design, and manufacture the components and applications that will use these systems.
+	</p>
+	<p>
+		So, what does this mean to the high-speed PCB industry? Material considerations will be the top aspect that will have to be evaluated for designing and building the PCB stack-up. The 5G PCB will have to address all the specifications when carrying and receiving signal transmissions, providing electrical connections, and offering controls for specific functions. Also, challenges to the PCB design will need to be addressed, such as maintaining the signal integrity at those higher speeds, dealing with thermal management, and what to do to prevent electromagnetic interference (EMI) between digital and analog boards.
+	</p>
+		<img src="static/img/1st.png" style="position: relative; left: 150px; top: 20px;">
+	</div>
+
+
+<div class="article" style=" color: black;background-color: #c0cfd1; color: black ;padding:150px; align-self: center;">
+	<div class="date">11th OCTOBER 2018</div><hr>	
+	<h1>MIXED SIGNAL ACCEPTANCE CIRCUIT BOARD DESIGNS</h1>
+	<p class="quote">
+		Most systems now are handling 4G and 3G PCBs. This means that components are transmitting and receiving frequencies that can range from 600 MHz up to 5.925 GHz and bandwidth channels of 20MHz, or 200kHz for IoT systems. When designing PCBs for 5G network systems, the components will need Mm-wave frequencies of 28GHz, 30GHz, and even 77GHz based on the application. For bandwidth channels, 5G systems will be dealing with 100MHz right below and 400 MHz right above 6GHz frequencies.
+	</p>
+	<p>
+		These higher speeds and higher frequencies will demand the appropriate materials within the PCB to capture and transmit both lower and higher signals at the same time without experiencing signal loss and EMI. In addition, an added problem is that the devices will become lighter, portable, and smaller. With strict weight, size, and space limitations, the PCB materials will have to be flexible and light while accommodating all the microelectronics along the board.
+	</p>
+	<img src="static/img/2nd.png" style="position: relative; left: 150px; top: 20px;">
+		<br>
+		<br>
+		<br>
+	<p>
+		Thinner traces and stricter impedance control will need to be adhered to for the PCB copper tracings (Figure 2). The traditional subtractive etching processes used for 3G and 4G high-speed PCBs may be switched out for modified semi-additive processes. These modified semi-additive processes will provide more precise trace lines and straighter walls.
+	</p>
+	
+</div>
+
+<div class="article" style=" color: black;background-color: #f2f9fa; color: black; padding:150px; align-self: center;">
+	<div class="date">26TH JULY 2020</div><hr>	
+	<h1>EMI SHIELDING CHALLENGES</h1>
+	<p class="quote">
+		EMI, cross talk, and parasitic capacitance are major problems with circuit boards. To deal with cross talk and EMI that will be present due to the analog and digital frequencies along the board, separating the traces is highly recommended. Using a multilayer board will offer greater versatility to decide on how to place the high-speed traces so the routes for both analog and digital return signals will be kept away from each other, while also keeping the AC and DC circuits apart. Adding shielding and filtering when arranging components should also lower the amount of natural EMI that will be present on the PCB.
+	</p>
+
+		<img src="static/img/5th.png" style="position: relative; left: 150px; top: 20px;">
+		<br>
+		<br>
+		<br>
+	<p>
+		To ensure that there are no defects on the surface of the copper as well as critical shorts or opens, advanced automated optical inspection systems (AIOs) and 2D metrology with greater functionality will be used more often to inspect the conductor's traces as well as to measure them. These technologies will help PCB fabricators look for possible signal degradation risks.
+	</p>
+		
+</div>
+
+<div class="article" style=" color: black;background-color: #c0cfd1; color: black; padding:150px; align-self: center;" >
+	<div class="date">12 DECEMBER 2019</div><hr>	
+	<h1>THERMAL MANAGEMENT CHALLENGES</h1>
+	<p class="quote">
+		Higher signal speeds will lead to higher generated heat from the electricity passing through the PCB. PCB materials used for the dielectric materials and the core substrate layers will need to adequately handle the high speeds required for 5G technology. If the materials are inadequate, copper trace peeling, delamination, shrinking, and warping can result as the problems can cause deterioration to the PCB.
+	</p>
+	<p>
+		To deal with these higher temperatures, fabricators will need to focus on material selections that address thermal conductivity and thermal coefficients. A material offering higher thermal conductivity, excellent heat transfer and consistent dielectric constants will be necessary to create a good PCB that will provide all the 5G functions that will be required for the application.
+	</p>
+		<img src="static/img/6th.png" style="position: relative; left: 150px; top: 20px;">
+</div>
+
+<div class="article" style=" color: black;background-color: #f2f9fa; color: black; padding:150px; align-self: center;">
+	<div class="date">19 FEBRUARY 2017</div><hr>	
+	<h1>CREATING THE RIGHT PCB DESIGN</h1>
+	<p class="quote">
+		With the advent of 5G technology, printed circuit boards will be designed to offer the optimal signal integrity, impedance control, and thermal management. Due to the range of application specifications, designing the PCB will require working with a fabricator that has the knowledge and experience to work with the specific material requirements while also adhering to FCC requirements.
+	</p>
+	<p>
+		Customers will also have to consider when to start making the switch over to 5G based on their operations and applications. Some industries will have no choice but to fully accept 5G technology quickly to stay competitive in their market segment. Other industries may wish to take their time while considering the increased costs that are still present when selecting high-speed materials for the PCB stack-ups.
+	</p>
+	<img src="static/img/7th.png" style="position: relative; left: 150px;top: 20px;">
+		<br>
+		<br>
+		<br>
+	<p>
+		Adopting and leveraging the new technology, while keeping PCB scope creep low to control costs, will be a delicate balancing act. However, as the 5G technology becomes more mainstream, advanced techniques, materials, and fabrication equipment will be created to provide fabricators with greater capabilities to meet the high-speed PCB design and manufacturing demand. These technologies will also provide a more competitive field so that customers can find the right PCB design services that will meet their budgets.
+	</p>
+		
+</div>
+
+<div class="article" style=" color: black;background-color: #c0cfd1; color: black; padding:150px; align-self: center;"  >
+	<div class="date">29 SEPTEMBER 2015</div><hr>	
+	<h1>Artificial Intelligence (AI) and Machine Learning</h1>
+	<p class="quote">
+		Artificial Intelligence, or AI, has already received a lot of buzz in the past decade, but it continues to be one of the new technology trends because of its notable effects on how we live, work and play are only in the early stages. AI is already known for its superiority in image and speech recognition, navigation apps, smartphone personal assistants, ride-sharing apps and so much more.
+	</p>
+	<p>
+		Other than that AI will be used further to analyze interactions to determine underlying connections and insights, to help predict demand for services like hospitals enabling authorities to make better decisions about resource utilization, and to detect the changing patterns of customer behaviour by analyzing data in near real-time, driving revenues and enhancing personalized experiences.
+	</p>
+	<img src="static/img/8th.png" style="position: relative; left: 150px;top: 20px;">
+		<br>
+		<br>
+		<br>
+	<p>
+		The AI market will grow to a $190 billion industry by 2025 with global spending on cognitive and AI systems reaching over $57 billion in 2021.  With AI spreading its wings across sectors, new jobs will be created in development, programming, testing, support and maintenance, to name a few. On the other hand AI also offers some of the highest salaries today ranging from over $1,25,000 per year (machine learning engineer) to $145,000 per year (AI architect) - making it the top new technology trend you must watch out for!	
+	</p>
+	<p>
+		By 2030, AI automation is expected to create more than 70 million jobs. The sad fact is that AI might wipe out more than 23 million jobs by the same time frame. AI will create jobs in areas such as testing, support, maintenance, programming and data science
+Machine Learning the subset of AI, is also being deployed in all kinds of industries, creating a huge demand for skilled professionals. Forrester predicts AI, machine learning, and automation will create 9 percent of new U.S. jobs by 2025, jobs including robot monitoring professionals, data scientists, automation specialists, and content curators, making it another new technology trend you must keep in mind too!
+
+	</p>
+		
+</div>
+
+<div class="article" style=" color: black;background-color: #f2f9fa; color: black; padding:150px; align-self: center;" >
+	<div class="date">27 MARCH 2021</div><hr>	
+	<h1>Edge Computing</h1>
+	<p class="quote">
+		 Formerly a new technology trend to watch, cloud computing has become mainstream, with major players AWS (Amazon Web Services), Microsoft Azure and Google Cloud Platform dominating the market. The adoption of cloud computing is still growing, as more and more businesses migrate to a cloud solution. But it’s no longer the emerging technology trend. Edge is.
+	</p>
+	<p>
+		As the quantity of data organizations are dealing with continues to increase, they have realized the shortcomings of cloud computing in some situations. Edge computing is designed to help solve some of those problems as a way to bypass the latency caused by cloud computing and getting data to a datacenter for processing. It can exist “on the edge,” if you will, closer to where computing needs to happen. For this reason, edge computing can be used to process time-sensitive data in remote locations with limited or no connectivity to a centralized location. In those situations, edge computing can act like mini datacenters. 
+	</p>
+	<p>
+		Edge computing will increase as use of the Internet of Things (IoT) devices increases. By 2022, the global edge computing market is expected to reach $6.72 billion. And this new technology trend is only meant to grow and nothing less, creating various jobs, primarily for software engineers.
+	</p>
+	<img src="static/img/11th.png" style="position: relative; left: 80px; top: 20px;">	
+</div>
+
+<div class="article" style=" color: black;background-color: #c0cfd1; color: black; padding:150px; align-self: center;">
+	<div class="date">30 NOVEMBER 2019</div><hr>	
+	<h1>Quantum Computing</h1>
+	<p class="quote">
+		Next remarkable technology trend is quantum computing, which is a form of computing that takes advantage of quantum phenomena like superposition and quantum entanglement. This amazing technology trend is also involved in preventing the spread of the coronavirus, and to develop potential vaccines, thanks to its ability to easily query, monitor, analyze and act on data, regardless of the source. Another field where quantum computing is finding applications is banking and finance, to manage credit risk, for high frequency trading and fraud detection.
+	</p>
+	<p>
+		Quantum computers are now a multitude times faster than regular computers and huge brands like Splunk, Honeywell, Microsoft, AWS, Google and many others are now involved in making innovations in the field of Quantum Computing. The revenues for the global quantum computing market are projected to surpass $2.5 billion by 2029. And to make a mark in this new trending technology, you need to have experience with quantum mechanics, linear algebra, probability, information theory, and machine learning.
+	</p>
+	<img src="static/img/10th.png" style="position: relative; left: 150px; top: 20px;">
+</div>
+
+<div class="article" style=" color: black;background-color: #f2f9fa; color: black; padding:150px; align-self: center;">
+	<div class="date">14 APRIL 2019</div><hr>	
+	<h1>Internet of Things (IoT)</h1>
+	<p class="quote">
+		Another promising new technology trend is IoT. Many “things” are now being built with WiFi connectivity, meaning they can be connected to the Internet—and to each other. Hence, the Internet of Things, or IoT. The Internet of Things is the future, and has already enabled devices, home appliances, cars and much more to be connected to and exchange data over the Internet.
+	</p>
+	<p>
+		As consumers, we’re already using and benefitting from IoT. We can lock our doors remotely if we forget to when we leave for work and preheat our ovens on our way home from work, all while tracking our fitness on our Fitbits. However, businesses also have much to gain now and in the near future. The IoT can enable better safety, efficiency and decision making for businesses as data is collected and analyzed. It can enable predictive maintenance, speed up medical care, improve customer service, and offer benefits we haven’t even imagined yet.
+	</p>
+	<img src="static/img/3rd.png" style="position: relative; left: 150px; top: 20px;">
+		<br>
+		<br>
+		<br>
+	<p>
+		And we’re only in the beginning stages of this new technology trend: Forecasts suggest that by 2030 around 50 billion of these IoT devices will be in use around the world, creating a massive web of interconnected devices spanning everything from smartphones to kitchen appliances. The global spending on the Internet of Things (IoT) is forecast to reach 1.1 trillion U.S. dollars in 2022. New technologies such as 5G is expected to drive market growth in the coming years.
+And if you wish to step foot in this trending technology, you will have to learn about Information security, AI and machine learning fundamentals, networking, hardware interfacing, data analytics, automation, understanding of embedded systems, and must have device and design knowledge.
+	</p>
+</div>
+
+<div class="article" style=" color: black;background-color: #c0cfd1; color: black; padding:150px; align-self: center;">
+	<div class="date">26 JUNE 2020</div><hr>	
+	<h1>Cyber Security</h1>
+	<p class="quote">
+		Cyber security might not seem like an emerging technology, given that it has been around for a while, but it is evolving just as other technologies are. That’s in part because threats are constantly new. The malevolent hackers who are trying to illegally access data are not going to give up any time soon, and they will continue to find ways to get through even the toughest security measures. It’s also in part because new technology is being adapted to enhance security. As long as we have hackers, cybersecurity will remain a trending technology because it will constantly evolve to defend against those hackers.
+As proof of the strong need for cybersecurity professionals, the number of cybersecurity jobs is growing three times faster than other tech jobs. Also, the need for proper cyber security is so high that by 2021, $6 trillion will be spent globally on cybersecurity.
+You must note that however challenging the field is it also offers lucrative six-figure incomes, and roles can range from ethical hacker to security engineer to Chief Security Officer, offering a promising career path for someone who wants to get into and stick with this evergreen trending technology.
+	</p>
+		<img src="static/img/9th.png" style="position: relative; left: 150px; top: 20px;">
+		<br>
+		<br>
+		<br>
+	<p class="quote">
+	Today due to high internet penetration, cybersecurity is one of the biggest need of the world as cybersecurity threats are very dangerous to the country’s security. Not only the government but also the citizens should spread awareness among the people to always update your system and network security settings and to the use proper anti-virus so that your system and network security settings stay virus and malware-free.
+	</p>
+</div>
+<div class="article" style=" color: black;background-color: #f2f9fa; color: black; padding:150px; align-self: center;">
+	<div class="date">27 AUGUST 2020</div><hr>	
+	<h1>BLOCKCHAIN</h1>
+	<p class="quote">
+		Blockchain is the foundational technology that powers electronic currencies such as Cryptocurrencies. In simple terms, a Blockchain is an electronic ledger that can be shared among different users. This helps in creating a record of transactions that cannot be altered. Each of these records is time-stamped and linked to the previous one.
+	</p>
+	<img src="static/img/4th.png" style="position: relative; left: 150px; top: 20px;">
+		<br>
+		<br>
+		<br>
+	<p>
+So every time a new transaction is added to the ledger, it is stored as another block in the chain of transactions – hence the name. Blockchain is updated after the different parties contributing to the ledger agree. After new data is fed into a block, it cannot be erased. This makes technology verifiable and secure.
+This validation of transactions helps companies reduce their costs as no third party has to be paid. The system is very secure and there is no need for paying for centralized entities, as the technology is decentralized. Transactions are easier to track using Blockchain. 
+There is a rise in careers in Blockchain and it will create different job positions which are as follows:
+•	Blockchain Developers
+•	Blockchain Quality Engineer
+•	Blockchain Legal Consultant or Attorney
+•	Blockchain Engineer
+
+	</p>
+</div>
+
+<footer>
+	<div class="main-content">
+		<div class="left-box">
+			<h2>ABOUT US</h2>
+			<div class="content">
+				<p>We created 
+					this online forum 
+				using Python where people
+				can post and 
+				enhance 
+				their knowledge by
+				 reading articles and whats 
+				trending in this sector</p>
+				
+			</div>
+		</div>
+		
+		<div class="right-box">
+			<h2>FEEDBACK/SUGGESTIONS</h2>
+			<div class="content">
+				<form action="#">
+					<div class="name">
+						<div class="text">NAME *</div>
+						<input type="name" name="" value="" required>
+					</div>
+					<div class="email">
+						<div class="text">EMAIL *</div>
+						<input type="email" name="" value="" required>
+					</div>
+					<div class="feedback">
+						<div class="text">FEEDBACK *</div>
+						<textarea name="name" rows="4" cols="30" required></textarea>
+					</div>
+					<div class="send">
+						<button type="submit" name="button">SEND</button>
+					</div>
+				</form>
+				</div>
+		</div>
+
+	</div>
+	
+</footer>
+
+</body>
+
+</html>

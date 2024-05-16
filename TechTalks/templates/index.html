@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Talks</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="static/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="static/css/stylel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <script>
+                document.getElementById("signup").style.display='none';
+
+        </script>
+</head>
+<body>
+
+   <style>
+      body {
+             background-image: url('static/img/tt1.JPG');
+           }
+      </style>
+            
+    <!-- Sign in  Form -->
+        <section class="sign-in" id="login">
+            <div class="container" style="position: relative;top: 150px; left: 10px;">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="static/img/logo.JPG" width="300" height="250" alt="sign up image"></figure>
+                        <a href="#register-form" class="signup-image-link" onclick="blockNoneDiv('signup','login')">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        {% if msg.split(' ',1)[0]=="Invalid" %}
+                <div class="alert alert-success" style="text-align: center;">
+                   <strong>Error: </strong>{{ msg }}                 
+                </div>
+                  {% endif %}
+                        <h2 class="form-title" >Log In</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text"  name="userName" id="userName" placeholder="Username"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pas" id="pas" placeholder="Password"/>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" href="/home" >
+                            </div>
+                           
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            
+  
+
+
+<br>
+</br>
+<br></br>
+<br></br>
+
+
+ <!-- Sign up form -->
+ <section class="signup" id="signup">
+    <div class="container" style="position:relative; top: -20px;left: 40px;height: 465px;">
+        <div class="signup-content" style="position: relative; top: -60px;">
+            <div class="signup-form">
+                {% if msg.split(' ',1)[0]=="Username" %}
+            <div class="alert alert-success" style="text-align: center;">
+                <strong>Error: </strong>{{ msg }}
+              </div>
+              {% endif %}
+              
+                <h2 class="form-title">Sign up</h2>
+                <form action="/" method="POST" class="register-form" id="register-form">
+                    <div class="form-group">
+                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="name" id="name" placeholder="Username"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="zmdi zmdi-email"></i></label>
+                        <input type="email" name="email" id="email" placeholder="Your Email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="password" name="pass" id="pass" placeholder="Password"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                        <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                    </div>
+                    
+                    <div class="form-group form-button">
+                        <input type="submit" name="signUp" id="signUp" class="form-submit" value="Register"/>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-image">
+                <figure><img src="static/img/ta.png" alt="sign up image"></figure>
+                <a href="#" class="signin-image-link" onclick="blockNoneDiv('login','signup')">I am already member</a>
+            </div>
+        </div>
+    </div>
+</section>
+       
+
+       
+            
+    </div>
+    {% if msg.split(' ',1)[0]=="Username" %}
+<script>
+    document.getElementById("signup").style.display='block';
+    document.getElementById("login").style.display='none';
+</script>
+{%else %}
+<script>
+    document.getElementById("signup").style.display='none';
+</script>
+{% endif %}
+
+    <script>
+    function blockNoneDiv(param1,param2){
+        document.getElementById(param1).style.display='block';
+        document.getElementById(param2).style.display='none';
+    
+    }
+    </script>
+
+    <!-- JS -->
+    <script src="static/css/jquery.min.js"></script>
+    <script >src="{{ url_for('static', filename = 'main.js') }}"</script>
+</body>
+</html>

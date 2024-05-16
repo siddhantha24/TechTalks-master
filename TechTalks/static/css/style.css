@@ -1,0 +1,215 @@
+html {
+  height:100%;
+}
+body {
+   /* background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(pic2.jpg);*/
+   margin:0;
+  }
+
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(160, 234, 240) 50%, rgb(71, 13, 67) 50%);
+    bottom:0;
+    left:-30%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(30%);
+    }
+    100% {
+      transform:translateX(15%);
+    }
+  }
+
+
+
+
+  
+.eye{
+  position: absolute;
+  right: 55px;
+  top:290px
+  
+  
+}
+#hide1{
+  display: none;
+  
+}
+
+.login-page{
+     width: 360px;
+     padding:10% 0 0;
+     margin:auto;
+    
+}
+
+.form{
+    position:relative ;
+    z-index: 1 ;
+    background: rgba(247, 190, 67, 0.774);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 15px ;
+}
+.logomain{
+  vertical-align: middle;
+  transform: translateX(-3%);
+}
+
+
+  .profile{
+    vertical-align: center;
+    width: 90px;
+    height: 90px;
+    transform: translateX(+80%);
+  }
+.form input{
+    font-family: "Roboto" sans-serif;
+    outline: 1;
+    background: #F2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    
+    font-size: 14px;
+    border-radius: 15px ;
+}
+
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+  
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    
+    border-radius: 15px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+ 
+  }
+
+.form button{
+    font-family:"Roboto" sans-serif ;
+    text-transform: uppercase;
+    outline: 0;
+    background: #5caace;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px ;
+    color:#FFFFFF ;
+    font-size: 14px;
+   
+    }
+
+    .form button:hover, .form button:active{
+        background: #79a5d8;
+        border-radius: 15px ;
+    }
+
+    .form .message{
+        margin: 15px 0 0;
+        color:aliceblue;
+        font-size: 13px;
+    }
+
+    .form .message a{
+        color:#4CAF50 ;
+        text-decoration: none;
+    }
+
+    .form .register-form{
+        display: none;
+    }
+    .form .social-form{
+        display: none;
+    }
+    
+
+    
+     
+      
+      .vl {
+        display: none;
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
+      }
+.lgn {
+  color: black;
+}
+.dash
+{
+  position: relative;
+  left:60px;
+  top: 0px;
+}
+
+.signout
+{
+  position: relative;
+  border: 2px solid black;
+}
+
+.section-4{
+  position: relative;
+  right: 20px;
+  
+}

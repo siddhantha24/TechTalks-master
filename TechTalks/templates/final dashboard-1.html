@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>final dashboard</title>
+
+	<link rel="stylesheet" href="static/css/style-3.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	{% with messages = get_flashed_messages() %}
+	{% if messages %}
+	<script>
+		var messages = "{{messages | safe}}";
+		alert(messages.replace('[', '').replace(']', ''))
+	</script>
+	{% endif %}
+	{% endwith %}
+
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+	<link rel="stylesheet" href="static/css/style-3.css">
+
+	<input type="checkbox" name="" id="check">
+	<!-- <label for="check">
+		<i class="fas fa-bars" id="btn"></i>
+		<i class="fas fa-times" id="cancel"></i>
+	</label> -->
+	</div>
+
+
+	<!-- <div class="sidebar">
+
+
+		<ul>
+
+			<li><a href="#"><i class="fas fa-user">  TRENDING</i></a></li>
+			<li><a href="/signout"><i class="fas fa-sign-out-alt">  SIGNOUT</i></a></li>
+		</ul>
+	</div> -->
+
+	<section>
+		<nav>
+
+			<embed src="static/img/logoo.svg" width="400" height="100" type="image/svg+xml" <div class="logoo"></div>
+
+
+
+			<div class="search">
+				<form action="/search" method="POST" style="display: inline-block;">
+					<input type="text" placeholder="   search here" name="search">
+					<button>
+						<i class="fa fa-search" style="font-size: 18px;">
+						</i>
+					</button>
+				</form>
+				<a href="/signout"><button>
+					<i class="fas fa-sign-out-alt" title="Signout" style="font-size: 25px"> </i>
+				</button></a>
+			</div>
+
+
+
+			<ul class="dash">
+
+
+				<li><a href="/#"><span class="fas fa-home"></span>HOME</a></li>
+
+				<!-- <li><a href="#"><span class="fas fa-question-circle"></span> ASK A QUESTION</a></li> -->
+
+				<li><a href="/articles"><span class="fas fa-book"></span>ARTICLES</a>
+
+
+
+
+				</li>
+
+			</ul>
+
+			<section>
+				<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+				<div class="container">
+					<div class="section-1" style="position: relative;height: 630px;background-image: url('static/img/bg.jpg'); background-repeat: no-repeat;background-size: cover;">
+						<a href="/cyberSecPage">
+							<div class="opt" style="position: relative;top: 50px;left: -40px;">
+								<div class="liner"  style="position: relative;top: 20px;left: 5px;width: 400px;height: 80px;">CYBER SECURITY</div>
+							</div>
+						</a>
+						<a href="/webdevelopmentPage">
+							<div class="opt" style="position: relative;top: 50px;left: -80px;">
+								<div class="liner" style="position: relative;top: 20px;left: 5px;width: 400px;height: 80px;">WEB DEVELOPMENT</div>
+							</div>
+						</a>
+						<a href="/OOPPage">
+							<div class="opt" style="position: relative;top: 430px;left: 350px;">
+								<div class="liner2" style="position: relative;top: 5px;left: 5px;width: 400px;height: 80px;">OBJECT ORIENTED PROGRAMMING</div>
+							</div>
+						</a>
+						<a href="/HardwaretechPage">
+							<div class="opt2"  style="position: relative;top: 285px;left: -30px;">
+								<div class="liner"  style="position: relative;top: 20px;left: 5px;width: 410px;height: 80px;">HARDWARE TECH</div>
+							</div>
+						</a>
+						<a href="/PythonPage">
+							<div class="opt2"  style="position: relative;top: 95px;left: 120px;">
+								<div class="liner"  style="position: relative;top: 20px;left: 5px;width: 300px;height: 80px;">PYTHON</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				</div>
+				</div>
+				</div>
+
+				<div class="categories" style="background:#cacaca">
+					<div class="section-2" style="position: relative;left: 300px;padding-top: 60px;	">
+						<a href="/topCategories"><div class="bocs" style="width: 300px;"><i class="far fa-list-alt"></i>
+							<div class="content">TOP CATEGORIES</div>
+						</div></a>
+						<div class="bocs"><a href="/articles"><i class="far fa-newspaper"></i></a>
+							<div class="content">ARTICLES</div>
+						</div>
+						<div class="bocs"><a href="/aboutus"><i class="fas fa-headset"></i></a>
+							<div class="content">Technical Support</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-3" style="background-image: url('static/img/section3.jpg');">
+
+					<p>LETS GET STARTED</p>
+					<a href=interest>
+						<div class="bo"> LEARN MORE
+						</div>
+					</a>
+				</div>
+
+				<!---<div class="section-4">
+					<video autoplay loop muted poster="http" ><video width="100" height="fit-content" ></video>
+						<source src="{{ url_for('static', filename='img/video.mp4') }}" style="position: relative; left: 100px;"
+							type="video/mp4">
+					</video>
+				</div> --->
+
+				<div class="section-4">
+					<div class="section-vid">
+						<video autoplay loop muted poster="http" width="1440px" height="700">
+						
+						<source src="{{ url_for('static', filename='img/video.mp4') }}"  type="video/mp4">
+					</video>
+			</section>
+
+		</nav>
+	</section>
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+	<footer style="background-color:#cacaca;color:black">
+		<div class="main-content">
+			<div class="left-box">
+				<h2 style="color:black">ABOUT US</h2>
+				<div class="content"style="color:black">
+					<p>We created
+						this online forum
+						using Python where people
+						can post and
+						enhance
+						their knowledge by
+						reading articles and whats
+						trending in this sector</p>
+				
+				</div>
+			</div>
+
+			<div class="right-box" style="color:black">
+				<h2 style="color:black">FEEDBACK</h2>
+				<div class="content">
+					<form action="/feedback" method="POST">
+						<div class="name">
+							<div class="text" style="color:black">NAME *</div>
+							<input type="name" name="name" required>
+						</div>
+						<div class="email">
+							<div class="text" style="color:black">EMAIL *</div>
+							<input type="email" name="email" value="" required>
+						</div>
+						<div class="feedback"style="color:black">
+							<div class="text" style="color:black">FEEDBACK *</div>
+							<textarea name="feedback" rows="4" cols="30" required></textarea>
+						</div>
+						<div class="send">
+							<button type="submit" name="button">SEND</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+	<!-- <div class="icon-bar">
+
+		<a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
+
+		<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+
+		<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+
+		<a href="#" class="google"><i class="fa fa-google"></i></a>
+
+		<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+
+
+		<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+
+	</div> -->
+
+
+</body>
+
+</html>
